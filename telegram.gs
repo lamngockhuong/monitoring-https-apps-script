@@ -33,8 +33,8 @@ class Telegram {
   }
 
   getMe() {
-    var url = `${TELEGRAM_URL}${this.botToken}/getMe`;
-    var response = UrlFetchApp.fetch(url);
+    const url = `${TELEGRAM_URL}${this.botToken}/getMe`;
+    const response = UrlFetchApp.fetch(url);
 
     return response.getContentText();
   }
